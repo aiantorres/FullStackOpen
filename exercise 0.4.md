@@ -20,7 +20,7 @@ sequenceDiagram
     Note right of Navegador: El navegador ejecuta main.js<br/>que solicita los datos JSON
     Navegador->>Servidor: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     Servidor-->>Navegador: [{content: "Full Stack Open is Amazing", date: "2024-02-20"}, ...]
-    Note over Navegador: El navegador ejecuta el callback<br/>que renderiza las notas
+    Note right of Navegador: El navegador ejecuta el callback<br/>que renderiza las notas
 
 
 

@@ -9,7 +9,7 @@ sequenceDiagram
 
 
     Navegador->>Servidor: POST https://studies.cs.helsinki.fi/exampleapp/new_note
-    Note right of Servidor: El servidor crea una nueva nota<br/>y la añade a la lista de notas
+    Note right of Navegador: El servidor crea una nueva nota<br/>y la añade a la lista de notas
     Servidor-->>Navegador: HTTP 302 (redirección a /notes)
     Navegador->>Servidor: GET https://studies.cs.helsinki.fi/exampleapp/notes
     Servidor-->>Navegador: HTML document
@@ -20,7 +20,7 @@ sequenceDiagram
     Note right of Navegador: El navegador ejecuta main.js<br/>que solicita los datos JSON
     Navegador->>Servidor: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     Servidor-->>Navegador: [{content: "Full Stack Open is Amazing", date: "2024-02-20"}, ...]
-    Note over Servidor: El navegador ejecuta el callback<br/>que renderiza las notas
+    Note over Navegador: El navegador ejecuta el callback<br/>que renderiza las notas
 
 
 
